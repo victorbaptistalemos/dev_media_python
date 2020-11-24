@@ -18,11 +18,14 @@ class Calculadora:
     def calcular_rendimento_tinta(self):
         self.__litro_rendimento = (self.__area_teto + self.__area_paredes) / self.__RENDIMENTO_TINTA
 
-    def get_area_parede(self):
+    @property
+    def area_parede(self):
         return self.__area_paredes
 
-    def get_area_teto(self):
+    @property
+    def area_teto(self):
         return self.__area_teto
 
-    def get_litro_rendimento(self):
+    @property
+    def litro_rendimento(self):
         return self.__litro_rendimento
