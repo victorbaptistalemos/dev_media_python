@@ -1,7 +1,5 @@
-largura = 5
-altura = 2.9
-profundidade = 3
+largura: float = float(input('Qual a largura do cômodo? '))  # Não fixa o tipo da váriável
+profundidade = float(input('Qual a profundidade do cômodo? '))
+ALTURA = 2.9
 
-print(2 * (largura + profundidade) * altura)
-
-print(largura * profundidade)
+print(f'A área das paredes é: {2 * (largura + profundidade) * ALTURA}')
