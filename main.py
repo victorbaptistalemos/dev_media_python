@@ -6,9 +6,9 @@ comodo = Comodo(
     input('Qual a profundidade do cômodo? ')
 )
 
-calculadora = Calculadora(comodo.largura, comodo.profundidade)
+calculadora = Calculadora(comodo)
 
 
-print(f'A área das paredes é: {calculadora.area_paredes}')
-print(f'A área do teto é: {calculadora.area_teto}')
-print(f'A litragem de tinta necessária é: {calculadora.litro_rendimento}')
+print(f'A área das paredes é: {calculadora.get_area_parede()}')
+print(f'A área do teto é: {calculadora.get_area_teto()}')
+print(f'A litragem de tinta necessária é: {calculadora.get_litro_rendimento()}')
