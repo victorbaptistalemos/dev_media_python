@@ -1,13 +1,14 @@
 from calculadora import Calculadora
+from comodo import Comodo
 
-calc = Calculadora()
-largura: float = float(input('Qual a largura do cômodo? '))  # Não fixa o tipo da váriável
-profundidade = float(input('Qual a profundidade do cômodo? '))
-ALTURA = 2.9
-RENDIMENTO_TINTA = 10.0
+comodo = Comodo(
+    input('Qual a largura do cômodo? '),
+    input('Qual a profundidade do cômodo? ')
+)
 
-calc.calcular_area_paredes(largura, profundidade)
-calc.calcular_area_teto(largura, profundidade)
+calculadora = Calculadora(comodo.largura, comodo.profundidade)
 
-print(f'A área das paredes é: {calc.area_paredes}')
-print(f'A litragem de tinta necessária é: {calc.area_teto / RENDIMENTO_TINTA}')
+
+print(f'A área das paredes é: {calculadora.area_paredes}')
+print(f'A área do teto é: {calculadora.area_teto}')
+print(f'A litragem de tinta necessária é: {calculadora.litro_rendimento}')
