@@ -8,7 +8,6 @@ comodo = Comodo(
 
 calculadora = Calculadora(comodo)
 
-
-print(f'A área das paredes é: {calculadora.area_parede()}')
-print(f'A área do teto é: {calculadora.area_teto()}')
-print(f'A litragem de tinta necessária é: {calculadora.litro_rendimento()}')
+print(f'A área das paredes é: {calculadora.area_paredes}')
+print(f'A área do teto é: {calculadora.area_teto}')
+print(f'A litragem de tinta necessária é: {calculadora.rendimento_tinta}')

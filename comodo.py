@@ -11,14 +11,6 @@ class Comodo:
     def largura(self):
         return self.__largura
 
-    @property
-    def profundidade(self):
-        return self.__profundidade
-
-    @property
-    def altura(self):
-        return self.__ALTURA
-
     @largura.setter
     def largura(self, largura):
         try:
@@ -27,10 +19,18 @@ class Comodo:
             print('O Valor da Largura é inválido')
             exit()
 
+    @property
+    def profundidade(self):
+        return self.__profundidade
+
     @profundidade.setter
     def profundidade(self, profundidade):
         try:
-            self.__largura = float(profundidade)
+            self.__profundidade = float(profundidade)
         except ValueError:
             print('O Valor da Profundidade é inválido')
             exit()
+
+    @property
+    def altura(self):
+        return self.__ALTURA
